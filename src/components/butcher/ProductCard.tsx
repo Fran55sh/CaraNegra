@@ -22,7 +22,7 @@ const ProductCard = ({ product, mode }: ProductCardProps) => {
 
   const getPrice = () => {
     const multiplier = selectedWeight === "500g" ? 0.5 : selectedWeight === "2kg" ? 2 : 1;
-    return (product.price * multiplier).toFixed(2);
+    return Math.round(product.price * multiplier).toLocaleString('es-AR');
   };
 
   return (
@@ -81,7 +81,7 @@ const ProductCard = ({ product, mode }: ProductCardProps) => {
         {/* Price & Add to Cart */}
         <div className="flex items-center justify-between pt-2">
           <div>
-            <span className="text-2xl font-semibold">€{getPrice()}</span>
+            <span className="text-2xl font-semibold">${getPrice()}</span>
             <span className="text-sm text-muted-foreground ml-1">/ {selectedWeight}</span>
           </div>
           
@@ -93,7 +93,7 @@ const ProductCard = ({ product, mode }: ProductCardProps) => {
             }`}
           >
             <Plus className="h-4 w-4" />
-            <span className="text-sm font-medium">Add</span>
+            <span className="text-sm font-medium">Agregar</span>
           </button>
         </div>
       </div>

@@ -27,24 +27,24 @@ const Hero = ({ mode }: HeroProps) => {
       <div className="relative container h-full flex items-center px-6">
         <div className="max-w-xl space-y-6 animate-fade-up">
           <span className="inline-block text-sm font-semibold uppercase tracking-[0.2em] text-primary">
-            Premium Quality Since 2012
+            Calidad Premium desde 2012
           </span>
           
           <h1 className="font-serif text-5xl md:text-6xl font-medium leading-tight">
-            The Finest{" "}
+            El Mejor{" "}
             <span className={mode === "dark" ? "text-gold" : "text-blood-red"}>
-              Argentinian
+              Cordero
             </span>{" "}
-            Lamb Meat
+            Argentino
           </h1>
           
           <p className="text-lg text-muted-foreground max-w-md">
-            Hand-selected cuts from heritage breeds, dry-aged to perfection. 
-            Experience meat as nature intended.
+            Cortes seleccionados a mano de razas autóctonas, madurados a la perfección. 
+            Experimentá la carne como debe ser.
           </p>
           
           <button className={mode === "dark" ? "btn-hero-dark" : "btn-hero"}>
-            Shop Now
+            Comprar Ahora
           </button>
         </div>
       </div>

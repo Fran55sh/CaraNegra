@@ -9,12 +9,12 @@ interface FeaturedProductsProps {
 }
 
 const products = [
-  { id: 1, name: "Dry-Aged Ribeye Steak", price: 42, image: productBeef, category: "Beef" },
-  { id: 2, name: "Iberian Pork Secreto", price: 38, image: productPork, category: "Pork" },
-  { id: 3, name: "Free-Range Whole Chicken", price: 24, image: productPoultry, category: "Poultry" },
-  { id: 4, name: "Frenched Lamb Rack", price: 56, image: productLamb, category: "Lamb" },
-  { id: 5, name: "Wagyu Beef Tenderloin", price: 89, image: productBeef, category: "Beef" },
-  { id: 6, name: "Organic Duck Breast", price: 32, image: productPoultry, category: "Poultry" },
+  { id: 1, name: "Bife de Chorizo Madurado", price: 18500, image: productBeef, category: "Vacuno" },
+  { id: 2, name: "Secreto de Cerdo Ibérico", price: 16800, image: productPork, category: "Cerdo" },
+  { id: 3, name: "Pollo de Campo Entero", price: 9500, image: productPoultry, category: "Aves" },
+  { id: 4, name: "Carré de Cordero", price: 24500, image: productLamb, category: "Cordero" },
+  { id: 5, name: "Lomo de Wagyu", price: 45000, image: productBeef, category: "Vacuno" },
+  { id: 6, name: "Pechuga de Pato Orgánico", price: 14200, image: productPoultry, category: "Aves" },
 ];
 
 const FeaturedProducts = ({ mode }: FeaturedProductsProps) => {
@@ -23,9 +23,9 @@ const FeaturedProducts = ({ mode }: FeaturedProductsProps) => {
       <div className="container">
         <div className="flex items-end justify-between mb-12">
           <div className="space-y-3">
-            <h2 className="section-heading">Featured Cuts</h2>
+            <h2 className="section-heading">Cortes Destacados</h2>
             <p className="text-muted-foreground max-w-md">
-              Our butchers' selection of the week's finest offerings
+              La selección de nuestros carniceros de la semana
             </p>
           </div>
           <a 
@@ -34,7 +34,7 @@ const FeaturedProducts = ({ mode }: FeaturedProductsProps) => {
               mode === "dark" ? "text-gold hover:text-gold/80" : "text-blood-red hover:text-blood-red/80"
             } transition-colors`}
           >
-            View All Products →
+            Ver Todos los Productos →
           </a>
         </div>
 
