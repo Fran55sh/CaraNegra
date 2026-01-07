@@ -11,10 +11,10 @@ const Header = ({ mode, cartCount = 3 }: HeaderProps) => {
   const logo = mode === "light" ? logoLight : logoDark;
   
   const navItems = [
-    "Shop Quality Meats",
-    "Our Story",
-    "Recipes",
-    "Wholesale",
+    "Carnes Premium",
+    "Nuestra Historia",
+    "Recetas",
+    "Mayorista",
   ];
 
   return (
@@ -47,7 +47,7 @@ const Header = ({ mode, cartCount = 3 }: HeaderProps) => {
             <Search className="absolute left-3 top-1/2 -translate-y-1/2 h-4 w-4 text-muted-foreground" />
             <input
               type="text"
-              placeholder="Search..."
+              placeholder="Buscar..."
               className="w-48 pl-10 pr-4 py-2 text-sm bg-secondary/50 border-0 rounded-full focus:outline-none focus:ring-2 focus:ring-primary/20 transition-all"
             />
           </div>

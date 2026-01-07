@@ -8,21 +8,21 @@ interface TestimonialsProps {
 const testimonials = [
   {
     id: 1,
-    quote: "The quality of the meat is exceptional. You can truly taste the difference that proper aging and sourcing makes. My family won't eat meat from anywhere else now.",
+    quote: "La calidad de la carne es excepcional. Realmente se nota la diferencia que hace una buena maduración y selección. Mi familia no quiere comer carne de otro lado.",
     author: "María García",
-    location: "Madrid",
+    location: "Buenos Aires",
   },
   {
     id: 2,
-    quote: "As a professional chef, I demand the highest quality ingredients. CaraNegra consistently delivers premium cuts that elevate every dish I create.",
+    quote: "Como chef profesional, exijo ingredientes de la más alta calidad. CaraNegra siempre entrega cortes premium que elevan cada plato que preparo.",
     author: "Chef Antonio Moreno",
-    location: "Barcelona",
+    location: "Córdoba",
   },
   {
     id: 3,
-    quote: "The Argentinian lamb is simply the best I've ever tasted. The ordering process is seamless and delivery is always on time and perfectly chilled.",
+    quote: "El cordero patagónico es simplemente el mejor que probé. El proceso de compra es muy fácil y la entrega siempre llega a tiempo y perfectamente refrigerada.",
     author: "Carlos Fernández",
-    location: "Valencia",
+    location: "Mendoza",
   },
 ];
 
@@ -36,7 +36,7 @@ const Testimonials = ({ mode }: TestimonialsProps) => {
     <section className="py-20 px-6">
       <div className="container max-w-4xl">
         <div className="text-center mb-12">
-          <h2 className="section-heading">What Our Customers Say</h2>
+          <h2 className="section-heading">Lo Que Dicen Nuestros Clientes</h2>
         </div>
 
         <div className="relative">

@@ -8,18 +8,18 @@ interface CategoriesProps {
 
 const categories = [
   {
-    name: "Dry-Aged Beef",
-    description: "28-day aged prime cuts",
+    name: "Carne Madurada",
+    description: "Cortes premium madurados 28 días",
     image: productBeef,
   },
   {
-    name: "Iberian Pork",
-    description: "Acorn-fed heritage pork",
+    name: "Cerdo Ibérico",
+    description: "Cerdo de bellota premium",
     image: productPork,
   },
   {
-    name: "Free-Range Poultry",
-    description: "Pasture-raised excellence",
+    name: "Aves de Corral",
+    description: "Crianza libre y natural",
     image: productPoultry,
   },
 ];
@@ -29,9 +29,9 @@ const Categories = ({ mode }: CategoriesProps) => {
     <section className="py-16 px-6">
       <div className="container">
         <div className="text-center mb-12 space-y-3">
-          <h2 className="section-heading">Our Categories</h2>
+          <h2 className="section-heading">Nuestras Categorías</h2>
           <p className="text-muted-foreground max-w-md mx-auto">
-            Explore our carefully curated selection of premium meats
+            Explorá nuestra selección de carnes premium
           </p>
         </div>
 
@@ -65,7 +65,7 @@ const Categories = ({ mode }: CategoriesProps) => {
                       mode === "dark" ? "text-gold" : "text-gold"
                     }`}
                   >
-                    Shop Now →
+                    Comprar →
                   </div>
                 </div>
               </div>
